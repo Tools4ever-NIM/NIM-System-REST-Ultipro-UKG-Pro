@@ -1,0 +1,451 @@
+{
+    "schema": {
+        "options": {},
+        "crud_objects": {
+            "jobs": {
+                "operations": {
+                    "jobsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/configuration/v1/jobs"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "jobCode",
+                "resources": {
+                    "countryCode": "string*",
+                    "flsaTypeCode": "string*",
+                    "isActive": "boolean*",
+                    "jobCode": "string*",
+                    "jobEEOCategory": "string*",
+                    "jobFamilyCode": "string*",
+                    "jobGroup": "string*",
+                    "longDescription": "string*",
+                    "title": "string*"
+                }
+            },
+            "job_groups": {
+                "operations": {
+                    "jobsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/configuration/v1/jobgroup"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "jobCode",
+                "resources": {
+                    "jobGroupCode": "string*",
+                    "jobGroupCodeDescription": "string*",
+                    "jobGroupNotes": "string*",
+                    "jobGroupCountryCode": "string*"
+                }
+            },
+            "job_families": {
+                "operations": {
+                    "job_familiesList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/configuration/v1/code-tables/JOBFAMILY"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "jobCode",
+                "resources": {
+                    "code": "string*",
+                    "description": "string*"
+                }
+            },
+            "employee_phoneNumbers": {
+                "operations": {
+                    "employee_phoneNumbersList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/personnel/v1/employee-multi-phone-numbers?page=1&per_Page={page_size}"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "employeeId",
+                "resources": {
+                    "employeeId": "string*",
+                    "auditKey": "string",
+                    "firstName": "string",
+                    "formerName": "string",
+                    "lastName": "string",
+                    "middleName": "string",
+                    "phoneNumber": "string*",
+                    "phoneCountryCode": "string*",
+                    "phoneCountryPrefix": "string*",
+                    "phoneTypeCode": "string*",
+                    "phoneExtension": "string*",
+                    "phoneIsPrivate": "boolean*",
+                    "systemId": "string*"
+                }
+            },
+            "employment_details": {
+                "operations": {
+                    "employment_detailsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/personnel/v1/employment-details"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "employeeID",
+                "resources": {
+                    "companyID": "string*",
+                    "companyCode": "string",
+                    "companyName": "string*",
+                    "employeeID": "string*",
+                    "jobDescription": "string*",
+                    "payGroupDescription": "string",
+                    "primaryJobCode": "string*",
+                    "orgLevel1Code": "string*",
+                    "orgLevel2Code": "string*",
+                    "orgLevel3Code": "string*",
+                    "orgLevel4Code": "string*",
+                    "originalHireDate": "string*",
+                    "lastHireDate": "string*",
+                    "fullTimeOrPartTimeCode": "string*",
+                    "primaryWorkLocationCode": "string*",
+                    "languageCode": "string",
+                    "primaryProjectCode": "string",
+                    "workPhoneNumber": "string*",
+                    "workPhoneExtension": "string*",
+                    "workPhoneCountry": "string*",
+                    "dateInJob": "string*",
+                    "dateLastWorked": "string*",
+                    "dateOfBenefitSeniority": "string",
+                    "dateOfSeniority": "string",
+                    "deductionGroupCode": "string",
+                    "earningGroupCode": "string",
+                    "employeeTypeCode": "string*",
+                    "employeeStatusCode": "string*",
+                    "employeeNumber": "string*",
+                    "jobChangeReasonCode": "string*",
+                    "jobTitle": "string*",
+                    "leaveReasonCode": "string*",
+                    "supervisorID": "string*",
+                    "supervisorFirstName": "string*",
+                    "supervisorLastName": "string*",
+                    "autoAllocate": "string",
+                    "clockCode": "string",
+                    "dateLastPayDatePaid": "string",
+                    "dateOfEarlyRetirement": "string",
+                    "dateOfLocalUnion": "string",
+                    "dateOfNationalUnion": "string",
+                    "dateOfRetirement": "string*",
+                    "dateOfSuspension": "string*",
+                    "dateOfTermination": "string*",
+                    "datePaidThru": "string*",
+                    "statusStartDate": "string*",
+                    "hireSource": "string*",
+                    "isAutoAllocated": "string",
+                    "isAutopaid": "string",
+                    "isMultipleJob": "string",
+                    "jobGroupCode": "string",
+                    "mailstop": "string",
+                    "okToRehire": "string",
+                    "payGroup": "string",
+                    "payPeriod": "string",
+                    "plannedLeaveReason": "string",
+                    "positionCode": "string*",
+                    "salaryOrHourly": "string",
+                    "scheduledAnnualHrs": "string",
+                    "scheduledFTE": "string",
+                    "scheduledWorkHrs": "string",
+                    "shift": "string",
+                    "shiftGroup": "string",
+                    "termReason": "string*",
+                    "terminationReasonDescription": "string*",
+                    "termType": "string*",
+                    "timeclockID": "string",
+                    "unionLocal": "string*",
+                    "unionNational": "string*",
+                    "weeklyHours": "string",
+                    "dateTimeCreated": "string",
+                    "dateTimeChanged": "string",
+                    "supervisorEmployeeNumber": "string*",
+                    "supervisorCOID": "string*",
+                    "supervisorCompanyCode": "string*",
+                    "companyGLSegment": "string",
+                    "locationGLSegment": "string"
+                    
+                }
+            },
+            "locations": {
+                "operations": {
+                    "locationsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/configuration/v1/locations"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "locationCode",
+                "resources": {
+                    "addressLine1": "string*",
+                    "addressLine2": "string*",
+                    "city": "string*",
+                    "countryCode": "string*",
+                    "description": "string*",
+                    "isActive": "boolean*",
+                    "locationCode": "string*",
+                    "locationGLSegment": "string*",
+                    "state": "string*",
+                    "zipOrPostalCode": "string*"
+                }
+            },
+            "org_levels": {
+                "operations": {
+                    "org_levelsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/configuration/v1/org-levels"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "code",
+                "resources": {
+                    "budgetGroup": "string*",
+                    "code": "string*",
+                    "currentYearBudgetFTE": "string*",
+                    "currentYearBudgetSalary": "string*",
+                    "description": "string*",
+                    "glSegment": "string*",
+                    "isActive": "boolean*",
+                    "lastYearBudgetFTE": "string*",
+                    "lastYearBudgetSalary": "string*",
+                    "level": "string*",
+                    "levelDescription": "string*",
+                    "reportingCategory": "string*"
+                }
+            },
+            "person_details": {
+                "operations": {
+                    "person_detailsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/personnel/v1/person-details?page=1&per_Page={page_size}"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "personId",
+                "resources": {
+                    "additionalName1": "string*",
+                    "additionalName2": "string*",
+                    "addressId": "string*",
+                    "addressIsOnTaxBoundary": "boolean",
+                    "addressLatitude": "string",
+                    "cobraExport": "string",
+                    "cobraIsActive": "boolean",
+                    "cobraReason": "string",
+                    "cobraStatus": "string",
+                    "cobraStatusDate": "string",
+                    "communityBroadcastSmsCode": "string",
+                    "consentElectronicW2": "boolean",
+                    "consentElectronicw2pr": "boolean",
+                    "dateDeceased": "string",
+                    "dateOfCobraEvent": "string",
+                    "dateOfCobraExport": "string",
+                    "dateOfCobraLetter": "string",
+                    "dateOfI9Expiration": "string",
+                    "datetimeChanged": "string",
+                    "datetimeCreated": "string",
+                    "disabilityType": "string",
+                    "ethnicDescription": "string",
+                    "formerName": "string",
+                    "healthBloodType": "string",
+                    "healthEyes": "string",
+                    "healthHair": "string",
+                    "healthHeightFeet": "string",
+                    "healthHeightInches": "string",
+                    "healthLastDonateDate": "string",
+                    "healthWeight": "string",
+                    "i9AlienNumber": "string",
+                    "i9DocA": "string",
+                    "i9DocB": "string",
+                    "i9DocC": "string",
+                    "i9Verified": "boolean",
+                    "i9VisaType": "string",
+                    "i9WorkAuth": "string",
+                    "isDisabled": "boolean",
+                    "isMultiPayGroup": "boolean",
+                    "isSmoker": "boolean",
+                    "militaryService": "boolean",
+                    "militaryBranchServed": "string",
+                    "militaryEra": "string",
+                    "militaryIsDisabledVet": "string",
+                    "militaryIsOthEligVet": "string",
+                    "militaryIsOthEligVetBasis": "string",
+                    "militaryIsActiveWartimeVet": "string",
+                    "nameFormer": "string",
+                    "previousSSN": "string",
+                    "originCountry": "string",
+                    "originLocation": "string",
+                    "w2IsDeceased": "boolean",
+                    "cobraNotes": "string",
+                    "addressSms": "string",
+                    "militarySeparationDate": "string",
+                    "homePhoneIsPrivate": "boolean",
+                    "smsApprovals": "boolean",
+                    "smsPayNotification": "boolean",
+                    "i9VisaExpirationDate": "string",
+                    "militaryIsMedalVet": "string",
+                    "lastNameNotSameAsSSCard": "string",
+                    "chkCashingInstCode": "string",
+                    "nationality1": "string",
+                    "nationality2": "string",
+                    "nationality3": "string",
+                    "personId": "string*",
+                    "employeeId": "string*",
+                    "companyId": "string*",
+                    "userName": "string*",
+                    "firstName": "string*",
+                    "middleName": "string*",
+                    "lastName": "string*",
+                    "preferredName": "string*",
+                    "namePrefixCode": "string*",
+                    "nameSuffixCode": "string*",
+                    "emailAddress": "string*",
+                    "emailAddressAlternate": "string*",
+                    "homePhone": "string*",
+                    "homePhoneCountry": "string",
+                    "addressLine1": "string",
+                    "addressLine2": "string",
+                    "addressLine3": "string",
+                    "addressLine4": "string",
+                    "addressCity": "string",
+                    "addressState": "string",
+                    "addressZipCode": "string",
+                    "addressCountry": "string",
+                    "addressCounty": "string",
+                    "dateOfBirth": "string*",
+                    "gender": "string",
+                    "ethnicIDCode": "string",
+                    "maritalStatusCode": "string",
+                    "ssn": "string",
+                    "nationalId": "string",
+                    "nationalIdCountry": "string",
+                    "ssnIsSuppressed": "boolean"
+                }
+            }
+        }
+    },
+    "rest": {
+        "config": {
+            "baseUrl": "https://{tenant_id}",
+            "get": {
+                "maxPageCount": 500,
+                "query_parameters": {
+                },
+                "pagination": {
+                        "mode": "link",
+                        "path":[],
+                        "page_size":"{page_size}"
+                }
+            },
+            "authentication": "basic_auth",
+            "call_handling": "generic",
+            "test_connection": {
+                "url": "/configuration/v1/company-details"
+            },
+            "accept": "application/json",
+            "retry": [
+                {
+                    "type": "statusCode",
+                    "statusCode": 429,
+                    "retry": {
+                        "type": "simple",
+                        "maxCount": 12,
+                        "waitTime": 5
+                    }
+                },
+                {
+                    "type": "connectionError"
+                }
+            ],
+            "headers": {
+                "US-Customer-Api-Key": "{client_access_Key}"
+            }
+
+        }
+        
+    },
+    "connection": {
+        "items": [
+            {
+                "name": "tenant_id",
+                "type": "textbox",
+                "label": "Tenent URL:",
+                "value": "service4.ultipro.com"
+            },
+            {
+                "name": "client_access_Key",
+                "type": "textbox",
+                "label": "Client Access Key:",
+                "value": ""
+            },
+            {
+                "name": "user_access_Key",
+                "type": "textbox",
+                "label": "User Access Key:",
+                "value": ""
+            },
+            {
+                "name": "page_size",
+                "type": "textbox",
+                "label": "Page Size:",
+                "value": "100"
+            }
+        ]
+    }
+}
