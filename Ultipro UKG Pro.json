@@ -111,7 +111,7 @@
                     "employment_detailsList": {
                         "method": "get",
                         "call": {
-                            "path": "/personnel/v1/employment-details"
+                            "path": "/personnel/v1/employment-details?page=1&per_Page={page_size}"
                         },
                         "processing_options": {
                             "output_field": null
