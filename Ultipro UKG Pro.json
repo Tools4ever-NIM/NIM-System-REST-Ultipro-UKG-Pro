@@ -398,11 +398,21 @@
             "test_connection": {
                 "url": "/configuration/v1/company-details"
             },
+            "socket_timeout": 3600000,
             "accept": "application/json",
             "retry": [
                 {
                     "type": "statusCode",
                     "statusCode": 429,
+                    "retry": {
+                        "type": "simple",
+                        "maxCount": 12,
+                        "waitTime": 5
+                    }
+                },
+                {
+                    "type": "statusCode",
+                    "statusCode": 500,
                     "retry": {
                         "type": "simple",
                         "maxCount": 12,
