@@ -3,6 +3,7 @@
 
 
 ## Data Tables
+- Company Details
 - Jobs
 - Job Groups
 - Job Families
