@@ -2,6 +2,29 @@
     "schema": {
         "options": {},
         "crud_objects": {
+            "company_details": {
+                "operations": {
+                    "jobsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/configuration/v1/company-details"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "companyId",
+                "resources": {
+                    "companyId": "string*",
+                    "masterCompanyId": "string*",
+                    "companyCode": "boolean*",
+                    "isMasterCompany": "string*"
+                }
+            },
             "jobs": {
                 "operations": {
                     "jobsList": {
