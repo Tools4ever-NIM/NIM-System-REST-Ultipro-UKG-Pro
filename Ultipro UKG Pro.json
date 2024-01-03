@@ -2,6 +2,142 @@
     "schema": {
         "options": {},
         "crud_objects": {
+            "user_defined_fields": {
+                "operations": {
+                    "jobsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/personnel/v1/user-defined-fields"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        },
+                        "query_parameters": {
+                        }
+                    }
+                },
+                "parameters": {},
+                "key": "employeeId",
+                "resources": {
+                    "employeeId": "string*",
+                    "personnelUserDefinedFields": {
+                       "personnelUDField01": {
+                          "field": "_:string*",
+                          "value": "_:string*"
+                       },
+                       "personnelUDField02": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField03": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField04": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField05": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField06": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField07": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField08": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField09": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField10": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField11": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField12": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField13": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "personnelUDField14": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      }
+                    },
+                    "internationalUserDefinedFields": {
+                      "internationalUDField01": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField02": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField03": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField04": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField05": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField06": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField07": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField08": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField09": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField10": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField11": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField12": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField13": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      },
+                      "internationalUDField14": {
+                        "field": "_:string*",
+                        "value": "_:string*"
+                      }
+                    }
+                }
+            },
             "company_details": {
                 "operations": {
                     "jobsList": {
