@@ -1,4 +1,7 @@
 # Ultipro UKG Pro
+
+Read the [UltiPro UKG Pro integration documentation](https://docs.nimsuite.com/en/integrations/ultipro-ukg-pro) for connector details and related guides.
+
 <img src="https://www.tools4ever.nl/connector-logos/ultipro-logo.png" width="256px">
 
 
